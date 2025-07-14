@@ -172,8 +172,8 @@
   </footer>
 
   <script>
-    // Fetch data from the backend endpoint that integrates with Amazon Product Advertising API
-    fetch('/api/products')
+    // Fetch data from your deployed Vercel demo API endpoint
+    fetch('https://your-vercel-url.vercel.app/api/products')
       .then(res => res.json())
       .then(products => {
         const productList = document.getElementById('product-list');
